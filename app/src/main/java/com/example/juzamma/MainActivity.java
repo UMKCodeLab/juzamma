@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+        //tanggal today
         textDate = findViewById(R.id.dateDisplay);
         Handler handler = new Handler();
         handler.post(new Runnable() {
@@ -45,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        //end tanggal
+
+
 
     }
 }
