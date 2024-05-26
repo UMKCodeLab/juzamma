@@ -10,17 +10,16 @@
 
     <RelativeLayout
         android:id="@+id/header"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#303030"
-        android:padding="20dp">
+        android:padding="16dp">
 
         <TextView
             android:id="@+id/appTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
             android:text="Juz Amma\nMobile"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
@@ -64,42 +63,15 @@
         />
 
     <!-- Suratt -->
-    <LinearLayout
+    <ListView
         android:id="@+id/surahList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/judul"
+        android:scrollbars="vertical"
         android:orientation="vertical"
-        android:padding="16dp"
+        tools:listitem="@layout/list_item"
         android:background="#303030">
-
-        <!-- Surat Item -->
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_surah_item"
-            android:padding="16dp"
-            android:layout_marginBottom="8dp">
-
-            <TextView
-                android:id="@+id/surahName1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="An-Naba"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp" />
-
-            <ImageView
-                android:id="@+id/circle1"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/circle_grey"
-                android:contentDescription="Circle" />
-        </RelativeLayout>
-
-
-    </LinearLayout>
+    </ListView>
 
 </RelativeLayout>
