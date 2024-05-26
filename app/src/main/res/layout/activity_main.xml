@@ -8,6 +8,7 @@
     android:background="#303030"
     tools:context=".MainActivity"
     >
+    <!-- Header -->
     <RelativeLayout
         android:id="@+id/header"
         android:layout_width="wrap_content"
@@ -36,6 +37,7 @@
             app:tint="#FFFFFF"
             />
     </RelativeLayout>
+    <!-- end header -->
 
     <!-- Date display -->
     <TextView
@@ -50,6 +52,9 @@
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         />
+    <!-- end Date -->
+
+    <!-- Sub Judus -->
     <TextView
         android:id="@+id/judul"
         android:layout_width="match_parent"
@@ -61,7 +66,9 @@
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         />
-    <!-- Suratt -->
+    <!-- end sub judul -->
+
+    <!-- List Surat -->
     <ListView
         android:id="@+id/surahList"
         android:layout_width="match_parent"
@@ -72,5 +79,6 @@
         tools:listitem="@layout/list_item"
         android:background="#303030">
     </ListView>
+    <!-- end list surat -->
 
 </RelativeLayout>
